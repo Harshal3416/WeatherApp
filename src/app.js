@@ -4,6 +4,7 @@ const hbs = require('hbs')
 const geocode = require('./utils/geoCode')
 const forecast = require('./utils/foreCast')
 
+const port = process.env.POST || 3000
 const app = express()
 const publicDir = path.join(__dirname, '../public')
 const viewDir = path.join(__dirname, '../templates/views')
@@ -96,6 +97,6 @@ app.get('*', (req, res)=>{
     res.render('error404')
 })
 
-app.listen(3000, () =>{
-    console.log("started")
+app.listen(port, () =>{
+    console.log("started", port)
 })

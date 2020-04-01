@@ -18,7 +18,7 @@ hbs.registerPartials(partialDir)
 
 app.get('', (req, res) => {
     res.render('index', {
-        title: 'Weather',
+        title: 'Home',
         name: 'Harshal'
     })
 })
@@ -41,8 +41,11 @@ app.get('/weather', (req, res) => {
                 return res.send({error})
             }
 
+            console.log("forecastData", forecastData)
             res.send({
-                forecast: forecastData,
+                forecast: forecastData.summary,
+                maxTemp: forecastData.temperatureMax,
+                minTemp: forecastData.temperatureMin,
                 location,
                 address: req.query.address
             })
@@ -51,15 +54,15 @@ app.get('/weather', (req, res) => {
 })
 
 app.get('/about', (req, res) => {
-    res.render('index', {
+    res.render('about', {
         title: 'About me',
         name: 'Harshal'
     })
 })
 
 app.get('/help', (req, res) => {
-    res.render('index', {
-        title: 'Help me',
+    res.render('help', {
+        title: 'Need Help..?',
         name: 'Harshal'
     })
 })

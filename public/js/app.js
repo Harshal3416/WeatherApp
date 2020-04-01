@@ -1,11 +1,9 @@
-console.log("Javascript File loaded")
-
-
-
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
 const msg1 = document.querySelector('#message1')
 const msg2 = document.querySelector('#message2')
+const msg3 = document.querySelector('#message3')
+const msg4 = document.querySelector('#message4')
 
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -15,6 +13,8 @@ weatherForm.addEventListener('submit', (e) => {
 
     msg1.textContent  = 'Loading....'
     msg2.textContent = ''
+    msg3.textContent = ''
+    msg4.textContent = ''
     
     fetch(`/weather?address=${location}`)
         .then((response) => {
@@ -26,7 +26,9 @@ weatherForm.addEventListener('submit', (e) => {
                 else {
                     console.log(data)
                     msg1.textContent = data.location
-                    msg2.textContent = data.forecast
+                    msg2.textContent = data.forecast                    
+                    msg3.textContent = data.maxTemp                    
+                    msg4.textContent = data.minTemp
                 }
             })
         })

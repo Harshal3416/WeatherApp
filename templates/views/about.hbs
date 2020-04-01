@@ -7,12 +7,16 @@
 </head>
 
 <body>
+    <div>
+        {{>header}}        
+        <p>This Application is developed using NodeJS, ExpressJS, HandleBars etc.</p>
+        <p>This site was created by {{name}}. It uses data from mapbox.com and darksky.net!</p>
+        {{!-- <img class="portrait" src="/img/me.jpg"> --}}
+    </div>
 
-    <p>{{>header}}</p>
-    <h1>
-       about harshal
-    </h1>
-     {{>footer}}
+        
+
+     <h3>{{>footer}}</h3>
 
 </body>
 

@@ -7,6 +7,9 @@ const foreCastUrl =`https://api.darksky.net/forecast/8b356ed5f3fd0f9690aa9a3f3eb
   
     request({url: foreCastUrl, json: true}, (err, {body})=>{
     
+        
+        console.log("data", body.daily)
+
         if(err){
             callback('UNABLE TO CONNECT', undefined)
         }
@@ -15,7 +18,7 @@ const foreCastUrl =`https://api.darksky.net/forecast/8b356ed5f3fd0f9690aa9a3f3eb
             callback('UNABLE TO FIND LOCATION', undefined)
         }
         else{
-            callback(undefined, body.daily.data[0].summary)
+            callback(undefined, body.daily.data[0])
             // console.log("RESULT", res.body)
         }
         

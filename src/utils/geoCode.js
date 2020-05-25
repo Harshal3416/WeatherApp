@@ -1,6 +1,6 @@
 const request = require('request')
 
-const geocode = (address = 'Bangalore', callback) => {
+const geocode = (address, callback) => {
 
     const geoUrl = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURI(address)}.json?access_token=pk.eyJ1IjoiaGFyc2hhbGIiLCJhIjoiY2s3Zm13Y3NkMDQ3bzNlbWZmdGVkcm1kMiJ9.lXo5osf-_IZmlZhK0OaubA&limit=1`
 

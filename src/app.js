@@ -19,11 +19,13 @@ hbs.registerPartials(partialDir)
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Home',
-        name: 'Harshal'
+        name: 'Harshal Belamkar'
     })
 })
 
 app.get('/weather', (req, res) => {
+
+    console.log("/weather")
 
     if(!req.query.address){
         return res.send({
@@ -56,14 +58,14 @@ app.get('/weather', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About App',
-        name: 'Harshal'
+        name: 'Harshal Belamkar'
     })
 })
 
 app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Need Help..?',
-        name: 'Harshal'
+        name: 'Harshal Belamkar'
     })
 })
 
@@ -85,7 +87,7 @@ app.get('/products', (req, res) =>{
 app.get('/error404', (req, res) => {
     res.render('index', {
         title: 'Error',
-        name: 'Harshal'
+        name: 'Harshal Belamkar'
     })
 })
 

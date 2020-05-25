@@ -5,23 +5,26 @@ body{
     max-width: 100%;
     height: 100%;
     margin: 0;
+    background-color: black;
 }
 
 header p{
     font-size: 60px;
     font-family: cursive;
+    color: whitesmoke;
 }
 
 header div{
     font-size: 40px;
     font-family: cursive;
+    color: whitesmoke;
 }
 
 header div a{
     font-family: Arial, Helvetica, sans-serif;
     margin-right: 10px;
     font: 40px sans-serif;
-    color: gray;
+    color: white;
     text-decoration: none;
     padding: 5px;    
 }
@@ -64,7 +67,9 @@ footer{
     height: 100px;
   }
   
-
+.white{
+    color: whitesmoke;
+}
 
 
 

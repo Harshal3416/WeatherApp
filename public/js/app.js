@@ -27,8 +27,8 @@ weatherForm.addEventListener('submit', (e) => {
                     console.log(data)
                     msg1.textContent = data.location
                     msg2.textContent = data.forecast                    
-                    msg3.textContent = data.maxTemp                    
-                    msg4.textContent = data.minTemp
+                    msg3.textContent = `Maximum Temperature: ${data.maxTemp}`                    
+                    msg4.textContent = `Minimum Temperature: ${data.minTemp}`
                 }
             })
         })

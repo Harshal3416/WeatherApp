@@ -69,13 +69,20 @@ footer{
   }
 
   .linkedin{
-    height: 50px;
-    border-radius: 6px;
+    color: white;
+    font-size: 50px;
+    padding: 10px;
   }
 
   .github{
     height:50px;
     border-radius:50%;
+  }
+
+  .profile{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .push {

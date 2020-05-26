@@ -68,8 +68,18 @@ footer{
     align-items: center;
   }
 
+  .linkedin{
+    height: 50px;
+    border-radius: 6px;
+  }
+
+  .github{
+    height:50px;
+    border-radius:50%;
+  }
+
   .push {
-    height: 100px;
+    min-height: 50px;
   }
   
 .white{

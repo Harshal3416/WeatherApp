@@ -51,6 +51,7 @@ form input {
     height: 250px;
     width: 250px;
 }
+a { color: black } 
  
 footer{
     padding: 10px;
@@ -59,8 +60,12 @@ footer{
 }
 
 .wrapper {
-    min-height: 100%;
-    margin-bottom: -50px;
+    min-height: 95%;
+    margin-bottom: -10%;
+    display: flex;
+    /* justify-items: center; */
+    flex-direction: column;
+    align-items: center;
   }
 
   .push {
@@ -69,6 +74,10 @@ footer{
   
 .white{
     color: whitesmoke;
+}
+
+.data{
+    color: deepskyblue;
 }
 
 
